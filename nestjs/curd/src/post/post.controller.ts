@@ -1,7 +1,7 @@
 import { Controller, Get, Param, Post, Body, Delete, Query } from '@nestjs/common';
 import { PostService } from './post.service';
 import { CreatePostDto } from './create-post.dto';
-import { identity } from 'rxjs';
+
 @Controller('posts')
 export class PostController {
     constructor(private postService: PostService) { }
